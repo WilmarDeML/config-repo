@@ -5,9 +5,9 @@ zuul:
   host:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
-    routes:
-      microservice1: # Service to create as sample
-        path: /microservice1/** #path that will be intercepted
-        url: microservice1 #which url the request will e mapped to
-        stripPrefix: false  #if zuul should replace the "/sample/" segment
-        sensitiveHeaders:
+  routes:
+    microservice1: # Service to create as sample
+      path: /microservice1/** #path that will be intercepted
+      serviceId: MICROSERVICE1 #which url the request will e mapped to
+      stripPrefix: false  #if zuul should replace the "/sample/" segment
+      sensitiveHeaders:
