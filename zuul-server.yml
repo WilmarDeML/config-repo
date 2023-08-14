@@ -1,5 +1,8 @@
 server:
   port: 8762
+eureka:
+  client:
+    registerWithEureka: false
 zuul:
   ignoredServices: '*'
   host:
